@@ -1,0 +1,10 @@
+^D:\CODING\RAYTRACING\CMAKEPROJECT1\BUILD\CMAKEFILES\62C12FEF38A6D2E6D5F909802C627E5F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/Raytracing/CMakeProject1 -BD:/Coding/Raytracing/CMakeProject1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Coding/Raytracing/CMakeProject1/build/CMakeProject1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
